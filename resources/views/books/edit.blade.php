@@ -5,7 +5,8 @@
     <h2>Edit Book</h2>
 
     <form action="{{ route('books.update', $book) }}" method="POST">
-        @csrf @method('PUT')
+        @csrf
+        @method('PUT') {{-- This correctly sets the HTTP method to PUT --}}
 
         @include('books.form', ['book' => $book])
 

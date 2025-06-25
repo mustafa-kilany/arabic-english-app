@@ -25,4 +25,9 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+      public function dashboard() // This method will be hit when you click the 'Dashboard' link
+    {
+        return view('dashboard'); // This renders your detailed dashboard.blade.php
+    }
 }
